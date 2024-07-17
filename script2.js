@@ -61,3 +61,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+    document.querySelector('.left-button').addEventListener('click', () => {
+        document.querySelector('.team-cards').scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('.right-button').addEventListener('click', () => {
+        document.querySelector('.team-cards').scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
+    });
