@@ -8,8 +8,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  /* background-image: url('images/bg-1.jpg'); */
-  /* background-color: black; */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -18,7 +16,6 @@ body {
   width:1200px;
   height:200px;
   perspective: 800px;
-  /* background-color: black; */
 }
 .cube{
   position:relative;

@@ -10,7 +10,7 @@
     justify-content: center;
     align-items:center;
     min-height:100vh;
-    background-color: #018ABE;
+    background-color: #000000;
   }
   .wave{
     position: relative;
@@ -19,7 +19,7 @@
   .wave span{
     position: relative;
     display: inline-block;
-    color:#fff;
+    color:#97CADB;
     font-size:3em;
     font-weight: bold;
     font-family: sans-serif;
@@ -42,9 +42,10 @@
 
   @media(max-width:500px){
     .wave span{
-      font-size: 1em;
+      font-size: 1.3em;
     }
   }
 
 
+  
   

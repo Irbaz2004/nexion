@@ -285,6 +285,7 @@ html,body{
     font-size: 50px;
     line-height: 1.5;
     margin-bottom:0;
+    text-shadow: 22px 20px 12px #090b3c;
 }
 .about_wrapper .projects p{ 
     font-size: 17px;
@@ -406,6 +407,7 @@ transform: scale(1.1);
 /* 7 Pricing */
 .price_wrapper{
     padding:100px 0 0;
+    background-color: #97CADB;
 }
 .price_wrapper .pricing_subtitle{ 
     font-size: 20px;
@@ -666,33 +668,23 @@ transform: scale(1.1);
 
 .scroll-button {
     position: absolute;
-    top: 50%;
-    /* transform: translateY(-50%); */
-    /* background-color: #000000; */
     background: none;
     border: none;
     cursor: pointer;
     z-index: 10;
     font-size: 29px;
-    margin: 18px;
     font-weight: bold;
+    color: #090b3c;
 }
 
 .left-button {
-    /* left: 0; */
     position: relative;
 }
 
 .right-button {
-    /* right: 0; */
     position: relative;
 
 }
-
-
-
-
-
 /* 9 Brands */
 .brand_wrapper{
     padding:100px 0;
