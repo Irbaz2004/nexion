@@ -685,6 +685,29 @@ transform: scale(1.1);
     position: relative;
 
 }
+.scroll-button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 29px;
+    font-weight: bold;
+    color: #090b3c;
+}
+
+.left-button {
+    right: 51%; /* Adjust the distance from the left edge */
+}
+
+.right-button {
+    left:50%; /* Adjust the distance from the right edge */
+}
+
+
+
 /* 9 Brands */
 .brand_wrapper{
     padding:100px 0;
@@ -963,5 +986,13 @@ transform: scale(1.1);
         height: auto;
         margin-left: 0%;
         margin-top: -14px;
+    }
+    .right-button {
+        left: 10%;
+        top: 105%;
+    }
+    .left-button {
+        right: 9%;
+        top: 105%;
     }
 }
