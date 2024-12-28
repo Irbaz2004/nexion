@@ -1,51 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: consolas;
-  } 
-  body{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    min-height:100vh;
-    background-color: #000000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F14E13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F14E13;
+}
+
+body, html {
+  background-color: #F14E13;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.logo-svg {
+  width: 300px;
+  height: auto;
+  margin: 5% auto;
+  display: block; 
+  animation: fadeIn 3s ease-in-out 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  .wave{
-    position: relative;
-    -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(0,0,0,0.2));
+  100% {
+    opacity: 1;
   }
-  .wave span{
-    position: relative;
-    display: inline-block;
-    color:#97CADB;
-    font-size:3em;
-    font-weight: bold;
-    font-family: sans-serif;
-    animation:animate 1.5s ease-in-out infinite;
-    animation-delay: calc(.1s * var(--c));
-  }
-  @keyframes animate{
-    0%,100%{
-      transform: translateY(0px);
-    }
-    20%{
-      transform: translateY(-20px);
-    }
-    40%{
-      transform: translateY(0px);
-    }
-  }
-  
+}
 
 
-  @media(max-width:500px){
-    .wave span{
-      font-size: 1.3em;
-    }
+h1 {
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #F14E13;
+}
+
+h5 {
+  margin: 5% 0% 1%;
+}
+
+.about {
+  font-size: 20px;
+  margin: 0px 300px;
+}
+
+.content {
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact {
+  height: 90vh;
+  background-color: #fff;
+  margin: 20px 50px;
+  display: flex;
+  border: 7px solid white;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1.5;
+  padding: 50px;
+}
+
+input {
+  padding: 15px 20px;
+  width: 100%;
+  margin: 2% 0%;
+  border: 2px solid #fff;
+  background-color: #F14E13;
+  color: white;
+}
+
+input:focus {
+  background-color: #F14E13;
+  border: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  margin: 2% 0%;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  background-color: #F14E13;
+  color: #fff;
+}
+
+textarea::placeholder {
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 1% 0%;
+  border: 1px solid #fff;
+  color: #F14E13;
+  background-color: #fff;
+  cursor: pointer;
+}
+#button{
+  width: 100%;
+  padding: 10px;
+  margin: 1% 0%;
+  border: 1px solid #fff;
+  color: #F14E13;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contact-para {
+  color: rgb(90, 90, 90);
+}
+
+form {
+  flex: 1;
+  padding: 50px;
+  background-color: #F14E13;
+}
+
+.contact-detail {
+  color: #F14E13;
+  margin-bottom: 5%;
+}
+.contact-detail a{
+  color: #F14E13;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px 0px;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: #F14E13;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon-para {
+  margin: 4% 0%;
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  font-size: 30px;
+}
+
+footer p {
+  color: rgb(90, 90, 90);
+  margin: 0px 250px;
+}
+
+.icons {
+  margin: 2% 0%;
+  padding: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
 
-  
-  
+  .about {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+
+  .contact {
+    flex-direction: column;
+    height: auto;
+    margin: 20px;
+  }
+
+  .contact-info, form {
+    padding: 20px;
+  }
+
+  .logo-svg {
+    width: 200px;
+    margin: 10% auto;
+  }
+
+  input, textarea, button {
+    font-size: 16px;
+  }
+
+  footer p {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .about {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .logo-svg {
+    width: 180px;
+    margin: 15% 7%;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+  .footer-content {
+    font-size: 15px;
+  }
+
+  footer p {
+    margin: 5px 0px;
+    font-size: 11px;
+  }
+  a{
+    font-size: 11px;
+  }
+}
