@@ -28,20 +28,4 @@ document.getElementById('form').addEventListener('submit', function(event) {
 });
 
 
-// Register ScrollTrigger plugin with GSAP
-gsap.registerPlugin(ScrollTrigger);
 
-
-
-// Animation for contact section (fade-in effect)
-gsap.from(".contact-info", {
-  opacity: 0, 
-  x: -100, 
-  duration: 1.5, 
-  scrollTrigger: {
-    trigger: ".contact-info", // Trigger the animation when the contact section comes into view
-    start: "top 1%", // Start when the top of the contact section reaches 80% of the viewport
-    end: "top 10%",   // End when the top of the contact section reaches 30% of the viewport
-    scrub: true,      // Smooth scrolling
-  }
-});
