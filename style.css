@@ -72,6 +72,15 @@ h5 {
   padding: 20px;
   text-align: center;
   color: #fff;
+  animation: contentFadeIn 3s ease-in-out 1;
+}
+@keyframes contentFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .contact {
@@ -81,6 +90,7 @@ h5 {
   display: flex;
   border: 7px solid white;
   flex-wrap: wrap;
+  border-radius: 5px;
 }
 
 .contact-info {
@@ -127,6 +137,7 @@ button {
   color: #F14E13;
   background-color: #fff;
   cursor: pointer;
+  border-radius: 3px;
 }
 #button{
   width: 100%;
@@ -136,6 +147,7 @@ button {
   color: #F14E13;
   background-color: #fff;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .contact-para {

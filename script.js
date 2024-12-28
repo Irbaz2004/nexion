@@ -1,6 +1,6 @@
 window.onload = function(){
     setTimeout(function(){
-        var loader = document.getElementsByClassName("wave")[0];
+        var loader = document.getElementsByClassName("logo-svg")[0];
         loader.style.display = "none";
         window.location.href = 'index1.html';
     },3000)
@@ -32,19 +32,6 @@ document.getElementById('form').addEventListener('submit', function(event) {
 gsap.registerPlugin(ScrollTrigger);
 
 
-// Animation for the content section (heading and paragraph)
-gsap.from(".content h1, .content .about", {
-  opacity: 0, 
-  y: 50, 
-  duration: 1, 
-  stagger: 0.3,  // Stagger the animations for multiple elements
-  scrollTrigger: {
-    trigger: ".content", // Trigger when the entire content section comes into view
-    start: "top 75%", // When top of content reaches 75% of viewport
-    end: "top 0%",   // End animation when top of content reaches 30% of viewport
-    scrub: true,      // Smooth animation when scrolling
-  }
-});
 
 // Animation for contact section (fade-in effect)
 gsap.from(".contact-info", {
@@ -53,8 +40,8 @@ gsap.from(".contact-info", {
   duration: 1.5, 
   scrollTrigger: {
     trigger: ".contact-info", // Trigger the animation when the contact section comes into view
-    start: "top 80%", // Start when the top of the contact section reaches 80% of the viewport
-    end: "top 30%",   // End when the top of the contact section reaches 30% of the viewport
+    start: "top 1%", // Start when the top of the contact section reaches 80% of the viewport
+    end: "top 10%",   // End when the top of the contact section reaches 30% of the viewport
     scrub: true,      // Smooth scrolling
   }
 });
