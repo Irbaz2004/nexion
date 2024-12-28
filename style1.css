@@ -21,7 +21,6 @@ body, html {
   display: block;
   margin: 5% auto;
   animation: fadeIn 2s ease-in-out;
-  opacity: 0;
 }
 
 @keyframes fadeIn {

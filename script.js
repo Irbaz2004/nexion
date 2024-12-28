@@ -3,7 +3,7 @@ window.onload = function(){
         var loader = document.getElementsByClassName("logo-svg")[0];
         loader.style.display = "none";
         window.location.href = 'index1.html';
-    },3000)
+    },5000)
 }
 
 emailjs.init('S8K3--flBHMyhLpC9'); // Replace with your EmailJS user ID
